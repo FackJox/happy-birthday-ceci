@@ -259,7 +259,7 @@ export const Home = () => {
           <div
             style={{
               position: "absolute",
-              top: "625vh",
+              top: "590vh",
               right: "25vw",
               width: "auto",
               maxWidth: "50vw",
