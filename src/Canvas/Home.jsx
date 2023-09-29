@@ -275,6 +275,9 @@ export const Home = () => {
               <img src="/1.jpg" style={{ maxWidth: "100%", height: "auto" }} />
             </a>
           </div>
+          <h1 style={{ position: "absolute", top: "650vh", right: "10vw" }}>
+            <br />
+          </h1>
         </Scroll>
       </ScrollControls>
     </Canvas>
