@@ -239,23 +239,23 @@ export const Home = () => {
           <h1
             style={{
               position: "absolute",
-              top: "208vh",
+              top: "212vh",
               right: "10vw",
               fontSize: "20vw",
             }}
           >
             to
           </h1>
-          <h1 style={{ position: "absolute", top: "410vh", left: "10vw" }}>
+          <h1 style={{ position: "absolute", top: "380vh", left: "10vw" }}>
             you
           </h1>
-          <h1 style={{ position: "absolute", top: "525vh", right: "15vw" }}>
+          <h1 style={{ position: "absolute", top: "522vh", right: "15vw" }}>
             my love,
           </h1>
-          <h1 style={{ position: "absolute", top: "609vh", right: "5vw", fontSize: "5em"}}>
+          <h1 style={{ position: "absolute", top: "560vh", right: "5vw", fontSize: "5em"}}>
             Ceci.
           </h1>
-          <h1 style={{ position: "absolute", top: "560vh", right: "10vw" }}>
+          <h1 style={{ position: "absolute", top: "600vh", right: "10vw" }}>
             <br />
           </h1>
           <div
