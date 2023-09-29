@@ -255,9 +255,7 @@ export const Home = () => {
           <h1 style={{ position: "absolute", top: "565vh", right: "5vw", fontSize: "5em"}}>
             Ceci.
           </h1>
-          <h1 style={{ position: "absolute", top: "600vh", right: "10vw" }}>
-            <br />
-          </h1>
+          
           <div
             style={{
               position: "absolute",
