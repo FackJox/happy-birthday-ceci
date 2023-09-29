@@ -233,7 +233,7 @@ export const Home = () => {
           >
             happy
           </h1>
-          <h1 style={{ position: "absolute", top: "100vh", left: "10vw" }}>
+          <h1 style={{ position: "absolute", top: "100vh", left: "15vw" }}>
             birthday
           </h1>
           <h1
