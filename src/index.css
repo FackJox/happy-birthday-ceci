@@ -9,6 +9,26 @@
   }
 }
 
+@font-face {
+  font-family: 'Inter UI Medium';
+  src: url('/fonts/Inter-UI-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Vogue';
+  src: url('/fonts/Vogue.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'coolvetica';
+  src: url('/fonts/coolvetica.otf') format('opentype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   box-sizing: border-box;
 }
@@ -26,14 +46,14 @@ body {
   overscroll-behavior: none;
   background: #FCFFF7f0;
   color: black;
-  font-family: 'Inter var', sans-serif;
+  font-family: 'coolvetica', sans-serif;
   font-feature-settings: 'cv06' 1;
 }
 
 h1 {
-  font-size: 15vw;
+  font-size: 20vw;
   font-weight: 400;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.0em;
   line-height: 0.7em;
   margin: 0;
   padding: 0;

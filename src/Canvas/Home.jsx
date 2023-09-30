@@ -29,7 +29,7 @@ function Text({ size, line1, line2, line3, line4, line5, ...props }) {
     <group {...props}>
       <Float ref={ref} speed={1}>
         <Text3D
-          font="./fonts/helvetiker_regular.typeface.json"
+          font="./fonts/wonder-season.json"
           size={size}
           material={material}
         >
@@ -55,19 +55,19 @@ function Items() {
       <Text
         line1="In the heart of Spanish sunsets,"
         line2="under velvet underground,"
-        size={0.25}
-        position={[-w / 2.1, 0, 0]}
+        size={0.21}
+        position={[-w / 2.05, 0, 0]}
       />
       <Text
         line1="Ceci dances, her spirit free,"
         line2="her laughter the only sound."
-        size={0.25}
+        size={0.22}
         position={[-w / 2.05, -1.1, 0]}
       />
       <Text
         line1="With a heart as deep as history,"
         line2="her spirit wild and free,"
-        size={0.25}
+        size={0.21}
         position={[-w / 2, -h, 0]}
       />
       <Text
@@ -79,13 +79,13 @@ function Items() {
       <Text
         line1="Her team with Stella and Jack,"
         line2="running a festival's thrill,"
-        size={0.25}
+        size={0.24}
         position={[-w / 2.1, -h * 1.4, 0]}
       />
       <Text
         line1="In the labour of their passion,"
         line2="time seems to stand still."
-        size={0.25}
+        size={0.21}
         position={[-w / 2.2, -h * 1.5, 0]}
       />
       <Text
@@ -98,7 +98,7 @@ function Items() {
       <Text
         line1="In the dance of their existence,"
         line2="it was always win-win."
-        size={0.23}
+        size={0.225}
         position={[-w / 2.3, -h * 1.8, 0]}
       />
       <Text
@@ -110,33 +110,33 @@ function Items() {
       <Text
         line1="In the aura of the cheesy techno,"
         line2="she's more than what she seems."
-        size={0.22}
+        size={0.20}
         position={[-w / 2.13, -h * 2.1, 0]}
       />
       <Text
         line1="Her passion for the mountains,"
         line2="where she'd often soul seek,"
-        size={0.25}
+        size={0.22}
         position={[-w / 2.08, -h * 2.3, 0]}
       />
       <Text
         line1="Her wisdom and empowerment,"
         line2="it's all part of her mystique."
-        size={0.25}
+        size={0.22}
         position={[-w / 2.09, -h * 2.4, 0]}
       />
       <Text
         line1="Her heart beats on the rhythm"
         line2="of the ancient Egyptian sands."
-        size={0.25}
+        size={0.23}
         position={[-w / 2.11, -h * 2.6, 0]}
       />
       <Text
         line1="Her soul soars"
         line2="in the architectures"
         line3="of far-off lands."
-        size={0.25}
-        position={[-w / 2.15, -h * 2.7, 0]}
+        size={0.28}
+        position={[-w / 2.15, -h * 2.75, 0]}
       />
       <Text
         line1="Her hands,"
@@ -151,13 +151,13 @@ function Items() {
         line3="for them,"
         line4="any risk,"
         line5="she'll take."
-        size={0.25}
-        position={[-w / 2.09, -h * 3.3, 0]}
+        size={0.28}
+        position={[-w / 8, -h * 3.3, 0]}
       />
       <Text
         line1="She loves the thrill of dancing,"
         line2="the joy of a good book,"
-        size={0.25}
+        size={0.22}
         position={[-w / 2.09, -h * 3.8, 0]}
       />
       <Text
@@ -169,7 +169,7 @@ function Items() {
       <Text
         line1="Her love for travelling is a flame,"
         line2="burning ever so bright,"
-        size={0.22}
+        size={0.21}
         position={[-w / 2.11, -h * 4.2, 0]}
       />
       <Text
@@ -189,7 +189,7 @@ function Items() {
       <Text
         line1="With the mountains as her backdrop,"
         line2="it's a beautiful sight."
-        size={0.21}
+        size={0.19}
         position={[-w / 2.12, -h * 5.2, 0]}
       />
 
@@ -203,7 +203,7 @@ function Items() {
         line1="Maria Cecilia Carolina Madrida Croquetta"
         line2="Perez De Acha Lopez,"
         line3="you light up every space."
-        size={0.18}
+        size={0.17}
         position={[-w / 2.1, -h * 5.5, 0]}
       />
     </Scroll>
@@ -249,17 +249,17 @@ export const Home = () => {
           <h1 style={{ position: "absolute", top: "380vh", left: "10vw" }}>
             you
           </h1>
-          <h1 style={{ position: "absolute", top: "480vh", right: "15vw" }}>
+          <h1 style={{ position: "absolute", top: "490vh", right: "15vw" }}>
             my love,
           </h1>
-          <h1 style={{ position: "absolute", top: "565vh", right: "5vw", fontSize: "5em"}}>
+          <h1 style={{ position: "absolute", top: "605vh", right: "5vw", fontSize: "5em"}}>
             Ceci.
           </h1>
           
           <div
             style={{
               position: "absolute",
-              top: "590vh",
+              top: "620vh",
               right: "25vw",
               width: "auto",
               maxWidth: "50vw",
@@ -273,7 +273,7 @@ export const Home = () => {
               <img src="/1.jpg" style={{ maxWidth: "100%", height: "auto" }} />
             </a>
           </div>
-          <h1 style={{ position: "absolute", top: "700vh", right: "10vw" }}>
+          <h1 style={{ position: "absolute", top: "750vh", right: "10vw" }}>
             <br />
           </h1>
         </Scroll>
