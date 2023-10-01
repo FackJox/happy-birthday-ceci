@@ -4,21 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter var', sans-serif;
-  }
-}
-
-@font-face {
-  font-family: 'Inter UI Medium';
-  src: url('/fonts/Inter-UI-Medium.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Vogue';
-  src: url('/fonts/Vogue.ttf') format('truetype');
-}
 
 @font-face {
   font-family: 'coolvetica';
