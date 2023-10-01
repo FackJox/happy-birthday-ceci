@@ -214,7 +214,7 @@ function Items() {
         line2="Perez De Acha Lopez,"
         line3="you light up every space."
         size={0.17}
-        position={[-w / 2.1, -h * 5.5, 0]}
+        position={[-w / 2.1, -h * 5.4, 0]}
       />
     </Scroll>
   );
@@ -275,7 +275,7 @@ export const Home = () => {
           <h1
             style={{
               position: "absolute",
-              top: "605vh",
+              top: "580vh",
               right: "5vw",
               fontSize: "5em",
             }}
@@ -283,7 +283,7 @@ export const Home = () => {
             Ceci.
           </h1>
 
-          <div className="absolute top-[620vh] w-fill h-3/4 flex items-center justify-center ">
+          <div className="absolute top-[597vh] w-full h-screen flex items-center justify-center ">
             <video
               src={video}
               ref={videoElement}
@@ -292,6 +292,7 @@ export const Home = () => {
               loop
               muted
               playsInline
+              className="flex object-cover w-full h-auto items-center justify-center"
             />
             {/* <div className="controls">
               <div className="actions">

@@ -67,9 +67,4 @@ svg {
   fill: black;
 }
 
-video {
-  width: auto;
-  height: 100vw;
-  object-fit: cover;
-}
 
