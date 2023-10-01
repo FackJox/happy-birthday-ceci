@@ -1,12 +1,13 @@
-import { Home } from './Canvas/Home'
+import { Home } from "./Components/Home";
+// import { Video } from "./Components/VideoPlayer";
 
 function App() {
-
   return (
     <>
-   <Home />
+      <Home />
+      {/* <Video /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

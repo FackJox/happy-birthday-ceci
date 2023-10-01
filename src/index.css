@@ -1,8 +1,9 @@
+@import url('https://rsms.me/inter/inter.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://rsms.me/inter/inter.css');
 @supports (font-variation-settings: normal) {
   html {
     font-family: 'Inter var', sans-serif;
@@ -24,10 +25,6 @@
   src: url('/fonts/coolvetica.otf') format('opentype');
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 * {
   box-sizing: border-box;
@@ -45,7 +42,7 @@ body,
 body {
   overscroll-behavior: none;
   background: #FCFFF7f0;
-  color: black;
+  color: #F75C03;
   font-family: 'coolvetica', sans-serif;
   font-feature-settings: 'cv06' 1;
 }
@@ -68,5 +65,11 @@ a {
 
 svg {
   fill: black;
+}
+
+video {
+  width: auto;
+  height: 100vw;
+  object-fit: cover;
 }
 
