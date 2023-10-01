@@ -303,7 +303,7 @@ export const Home = () => {
             />
             </div>
           <div className="absolute top-[700vh] w-screen h-screen flex items-center justify-center ">
-          <div className=" p-1 m-1 md:p-10 md:m-10 w-full h-full flex items-center justify-center ">
+          <div className=" p-1 m-1 md:p-10 md:m-10 w-full h-auto flex items-center justify-center ">
 
             <iframe src="https://my.atlist.com/map/2535defd-50df-4387-b379-06d89c4a1d14?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%" frameborder="1" scrolling="no" allowfullscreen></iframe>
             </div>
