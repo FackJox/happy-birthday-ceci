@@ -292,7 +292,7 @@ export const Home = () => {
               loop
               muted
               playsInline
-              className="flex object-cover w-full h-auto items-center justify-center"
+              className="flex object-cover w-full h-screen md:h-auto items-center justify-center"
             />
             {/* <div className="controls">
               <div className="actions">
