@@ -294,7 +294,7 @@ export const Home = () => {
               loop
               muted
               playsInline
-              className="flex object-cover pl-1 pr-1 ml-1 mr-1 md:p-10 md:m-10 w-full h-screen md:h-auto items-center justify-center"
+              className="flex object-cover pl-2 pr-2 ml-2 mr-2 md:p-10 md:m-10 w-full h-screen md:h-auto items-center justify-center"
               onClick={() => {
                 if (videoElement.current) {
                   videoElement.current.requestFullscreen();
@@ -303,7 +303,7 @@ export const Home = () => {
             />
             </div>
           <div className="absolute top-[700vh] w-screen h-screen flex items-center justify-center ">
-          <div className=" pl-1 pr-1 ml-1 mr-1 md:p-10 md:m-10 w-full h-auto flex items-center justify-center ">
+          <div className=" pl-2 pr-2 ml-2 mr-2 md:p-10 md:m-10 w-full h-3/4 flex items-center justify-center ">
 
             <iframe src="https://my.atlist.com/map/2535defd-50df-4387-b379-06d89c4a1d14?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%" frameborder="1" scrolling="no" allowfullscreen></iframe>
             </div>
