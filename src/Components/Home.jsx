@@ -194,27 +194,27 @@ function Items() {
         line2="she dances,"
         line3="under the starry night."
         size={0.25}
-        position={[-w / 2.13, -h * 5, 0]}
+        position={[-w / 2.13, -h * 4.9, 0]}
       />
       <Text
         line1="With the mountains as her backdrop,"
         line2="it's a beautiful sight."
         size={0.19}
-        position={[-w / 2.12, -h * 5.2, 0]}
+        position={[-w / 2.12, -h * 5.1, 0]}
       />
 
       <Text
         line1="She is a woman of passion,"
         line2="a woman of grace,"
         size={0.25}
-        position={[-w / 2.09, -h * 5.3, 0]}
+        position={[-w / 2.09, -h * 5.2, 0]}
       />
       <Text
         line1="Maria Cecilia Carolina Madrida Croquetta"
         line2="Perez De Acha Lopez,"
         line3="you light up every space."
         size={0.17}
-        position={[-w / 2.1, -h * 5.4, 0]}
+        position={[-w / 2.1, -h * 5.3, 0]}
       />
     </Scroll>
   );
@@ -275,65 +275,37 @@ export const Home = () => {
           <h1
             style={{
               position: "absolute",
-              top: "580vh",
+              top: "583vh",
               right: "5vw",
               fontSize: "5em",
             }}
           >
             Ceci.
           </h1>
+       
+          
 
-          <div className="absolute top-[597vh] w-full h-screen flex items-center justify-center ">
+          <div className="absolute top-[600vh] md:top-[597vh] w-full h-screen flex items-center justify-center ">
             <video
               src={video}
               ref={videoElement}
-              onTimeUpdate={handleOnTimeUpdate}
+              // onTimeUpdate={handleOnTimeUpdate}
               autoPlay
               loop
               muted
               playsInline
               className="flex object-cover w-full h-screen md:h-auto items-center justify-center"
+              onClick={() => {
+                if (videoElement.current) {
+                  videoElement.current.requestFullscreen();
+                  window.open('https://maps.google.com', '_blank');
+                }
+              }}
             />
-            {/* <div className="controls">
-              <div className="actions">
-                <button onClick={togglePlay}>
-                  {!playerState.isPlaying ? (
-                    <img src={play} alt="Play" />
-                  ) : (
-                    <img src={pause} alt="Pause" />
-                  )}
-                </button>
-              </div>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value={playerState.progress}
-                onChange={(e) => handleVideoProgress(e)}
-              />
-              <select
-                className="velocity"
-                value={playerState.speed}
-                onChange={(e) => handleVideoSpeed(e)}
-              >
-                <option value="0.50">0.50x</option>
-                <option value="1">1x</option>
-                <option value="1.25">1.25x</option>
-                <option value="2">2x</option>
-              </select>
-              <button onClick={toggleMute}>
-                {!playerState.isMuted ? (
-                  <img src={unmute} alt="Unmute" />
-                ) : (
-                  <img src={mute} alt="Mute" />
-                )}
-              </button>
-            </div> */}
+          
           </div>
 
-          <h1 style={{ position: "absolute", top: "750vh", right: "10vw" }}>
-            <br />
-          </h1>
+          
         </Scroll>
       </ScrollControls>
     </Canvas>
