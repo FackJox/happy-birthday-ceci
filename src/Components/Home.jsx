@@ -298,7 +298,6 @@ export const Home = () => {
               onClick={() => {
                 if (videoElement.current) {
                   videoElement.current.requestFullscreen();
-                  window.open('https://maps.google.com', '_blank');
                 }
               }}
             />
