@@ -222,14 +222,14 @@ function Items() {
 
 export const Home = () => {
   const videoElement = useRef(null);
-  const {
-    playerState,
-    togglePlay,
-    handleOnTimeUpdate,
-    handleVideoProgress,
-    handleVideoSpeed,
-    toggleMute,
-  } = useVideoPlayer(videoElement);
+  // const {
+  //   playerState,
+  //   togglePlay,
+  //   handleOnTimeUpdate,
+  //   handleVideoProgress,
+  //   handleVideoSpeed,
+  //   toggleMute,
+  // } = useVideoPlayer(videoElement);
 
   return (
     <Canvas
@@ -239,7 +239,7 @@ export const Home = () => {
       dpr={[1, 1.5]}
     >
       <color attach="background" args={["#fff8ed"]} />
-      <ScrollControls damping={3} pages={7}>
+      <ScrollControls damping={3} pages={8}>
         <Items />
         <Scroll html style={{ width: "100%" }}>
           <h1
@@ -302,9 +302,13 @@ export const Home = () => {
                 }
               }}
             />
-          
-          </div>
+            </div>
+          <div className="absolute top-[700vh] w-screen h-screen flex items-center justify-center ">
+          <div className=" p-10 m-10 w-full h-full flex items-center justify-center ">
 
+            <iframe src="https://my.atlist.com/map/2535defd-50df-4387-b379-06d89c4a1d14?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%" frameborder="1" scrolling="no" allowfullscreen></iframe>
+            </div>
+            </div>
           
         </Scroll>
       </ScrollControls>
