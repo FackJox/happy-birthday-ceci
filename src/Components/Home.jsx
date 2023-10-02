@@ -39,11 +39,13 @@ function Text({ size, line1, line2, line3, line4, line5, ...props }) {
 
   return (
     <group {...props}>
-      <Float ref={ref} speed={1}>
+      <Float ref={ref} speed={1.3} floatingRange={[-0.02, 0.02]}>
         <Text3D
           font="./fonts/wonder-season.json"
           size={size}
           material={material}
+          
+          
         >
           {line1}
           {" \n"}
@@ -76,6 +78,8 @@ function Text2({ size, line1, line2, line3, line4, line5, ...props }) {
   return (
     <group {...props}>
       <Float ref={ref} speed={1}>
+        <group>
+
         <Text3D
           font="./fonts/wonder-season.json"
           size={size}
@@ -84,17 +88,21 @@ function Text2({ size, line1, line2, line3, line4, line5, ...props }) {
           {line1}
           {" \n"}
           {line2}
+          {" \n"}
         
         </Text3D>
+  
         <Text3D
           font="./fonts/wonder-season.json"
           size={size}
           material={material}
-        >
-     
+          position={[0, -0.4, 0]}
+          >
+          {" \n"}
           {line3}
         
         </Text3D>
+          </group>
       </Float>
     </group>
   );
@@ -251,7 +259,7 @@ function Items() {
         size={0.25}
         position={[-w / 2.09, -h * 5.2, 0]}
       />
-      <Text
+      <Text2
         line1="Maria Cecilia Carolina Madrida Croquetta"
         line2="Perez De Acha Lopez,"
         line3="you light up every space."
@@ -279,6 +287,8 @@ export const Home = () => {
       camera={{ zoom: 80 }}
       gl={{ alpha: false, antialias: false, stencil: false, depth: false }}
       dpr={[1, 1.5]}
+      colorManagement={false}
+     onCreated={({ gl }) => { gl.toneMapping = THREE.NoToneMapping }}
     >
       <color attach="background" args={["#fff8ed"]} />
       <ScrollControls damping={2.5} pages={8}>
@@ -347,7 +357,7 @@ export const Home = () => {
           <div className="absolute top-[673vh] w-screen h-screen flex-col items-center justify-center ">
           <div className=" p-2 m-2 md:p-5 md:m-5 w-auto h-3/4 md:h-screen flex items-center justify-center">
 
-            <iframe src="https://my.atlist.com/map/2535defd-50df-4387-b379-06d89c4a1d14?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%" frameborder="1" scrolling="no" allowFullScreen></iframe>
+            <iframe src="https://my.atlist.com/map/2535defd-50df-4387-b379-06d89c4a1d14?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%" frameBorder="1" scrolling="no" allowFullScreen></iframe>
             </div>
             </div>
           
