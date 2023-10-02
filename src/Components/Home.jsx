@@ -278,7 +278,7 @@ export const Home = () => {
      onCreated={({ gl }) => { gl.toneMapping = THREE.NoToneMapping }}
     >
       <color attach="background" args={["#FFF0D5"]} />
-      <ScrollControls damping={2.5} pages={8}>
+      <ScrollControls damping={1.5} pages={8}>
         <Items />
         <Scroll html style={{ width: "100%" }}>
           <h1
