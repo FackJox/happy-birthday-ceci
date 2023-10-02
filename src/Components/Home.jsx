@@ -274,7 +274,6 @@ export const Home = () => {
       camera={{ zoom: 80 }}
       gl={{ alpha: false, antialias: false, stencil: false, depth: false }}
       dpr={[1, 1.5]}
-      colorManagement={false}
      onCreated={({ gl }) => { gl.toneMapping = THREE.NoToneMapping }}
     >
       <color attach="background" args={["#FFF0D5"]} />
