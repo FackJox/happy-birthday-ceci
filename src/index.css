@@ -22,14 +22,17 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  background: #fff8ed;
+
 }
 
 body {
   overscroll-behavior: none;
-  background: #fff8ed;
-  color: #F75C03;
+  color: #C96480;
   font-family: 'coolvetica', sans-serif;
   font-feature-settings: 'cv06' 1;
+  background: #fff8ed;
+
 }
 
 h1 {
@@ -39,7 +42,7 @@ h1 {
   line-height: 0.7em;
   margin: 0;
   padding: 0;
-  color: #F75C03;
+  color: #C96480;
 }
 
 

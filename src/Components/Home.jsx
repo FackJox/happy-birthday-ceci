@@ -21,7 +21,7 @@ import pause from "../assets/react.svg";
 import useVideoPlayer from "./VideoPlayer.jsx";
 
 const material = new THREE.MeshBasicMaterial({ color: 0x444545 });
-const material2 = new THREE.MeshBasicMaterial({ color: 0xF75C03 });
+const material2 = new THREE.MeshBasicMaterial({ color: '#C17817' });
 
 
 function Text({ size, line1, line2, line3, line4, line5, ...props }) {
@@ -82,7 +82,7 @@ function Text2({ size, line1, line2, line3, line4, line5, ...props }) {
 
         <Text3D
           font="./fonts/wonder-season.json"
-          size={size}
+          size={size * 1.1}
           material={material2}
         >
           {line1}
@@ -290,7 +290,7 @@ export const Home = () => {
       colorManagement={false}
      onCreated={({ gl }) => { gl.toneMapping = THREE.NoToneMapping }}
     >
-      <color attach="background" args={["#fff8ed"]} />
+      <color attach="background" args={["#FFF0D5"]} />
       <ScrollControls damping={2.5} pages={8}>
         <Items />
         <Scroll html style={{ width: "100%" }}>
@@ -311,7 +311,7 @@ export const Home = () => {
           <h1
             style={{
               position: "absolute",
-              top: "215vh",
+              top: "235vh",
               right: "10vw",
               fontSize: "20vw",
             }}
