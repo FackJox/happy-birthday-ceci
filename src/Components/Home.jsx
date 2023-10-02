@@ -10,15 +10,9 @@ import {
   Float,
   Text3D,
 } from "@react-three/drei";
-// import { VideoPlayer } from "./VideoPlayer";
-// import videoSrc from "../assets/video.mp4";
 
 import video from "../assets/video.mp4";
-import mute from "../assets/react.svg";
-import unmute from "../assets/react.svg";
-import play from "../assets/react.svg";
-import pause from "../assets/react.svg";
-import useVideoPlayer from "./VideoPlayer.jsx";
+
 
 const material = new THREE.MeshBasicMaterial({ color: 0x444545 });
 const material2 = new THREE.MeshBasicMaterial({ color: '#676767' });
@@ -272,14 +266,7 @@ function Items() {
 
 export const Home = () => {
   const videoElement = useRef(null);
-  // const {
-  //   playerState,
-  //   togglePlay,
-  //   handleOnTimeUpdate,
-  //   handleVideoProgress,
-  //   handleVideoSpeed,
-  //   toggleMute,
-  // } = useVideoPlayer(videoElement);
+
 
   return (
     <Canvas
