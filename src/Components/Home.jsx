@@ -311,7 +311,7 @@ export const Home = () => {
           <h1
             style={{
               position: "absolute",
-              top: "220vh",
+              top: "215vh",
               right: "10vw",
               fontSize: "20vw",
             }}
