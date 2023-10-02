@@ -244,7 +244,7 @@ function Items() {
         line2="she dances,"
         line3="under the starry night."
         size={0.25}
-        position={[-w / 2.13, -h * 4.9, 0]}
+        position={[-w / 2.13, -h * 4.95, 0]}
       />
       <Text
         line1="With the mountains as her backdrop,"
