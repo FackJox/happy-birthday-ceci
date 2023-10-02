@@ -294,7 +294,7 @@ export const Home = () => {
               loop
               muted
               playsInline
-              className="flex object-cover pl-2 pr-2 ml-2 mr-2 md:p-5 md:m-5 w-full h-screen   items-center justify-center"
+              className="flex object-cover pl-2 pr-2 ml-2 mr-2 md:p-5 md:m-5 w-full h-3/4   items-center justify-center"
               onClick={() => {
                 if (videoElement.current) {
                   videoElement.current.requestFullscreen();
