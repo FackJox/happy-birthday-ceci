@@ -21,7 +21,7 @@ import pause from "../assets/react.svg";
 import useVideoPlayer from "./VideoPlayer.jsx";
 
 const material = new THREE.MeshBasicMaterial({ color: 0x444545 });
-const material2 = new THREE.MeshBasicMaterial({ color: '#C17817' });
+const material2 = new THREE.MeshBasicMaterial({ color: '#676767' });
 
 
 function Text({ size, line1, line2, line3, line4, line5, ...props }) {
@@ -82,7 +82,7 @@ function Text2({ size, line1, line2, line3, line4, line5, ...props }) {
 
         <Text3D
           font="./fonts/wonder-season.json"
-          size={size * 1.1}
+          size={size * 1.2}
           material={material2}
         >
           {line1}
@@ -94,7 +94,7 @@ function Text2({ size, line1, line2, line3, line4, line5, ...props }) {
   
         <Text3D
           font="./fonts/wonder-season.json"
-          size={size}
+          size={size * 0.9}
           material={material}
           position={[0, -0.4, 0]}
           >
@@ -128,7 +128,7 @@ function Items() {
         line1="With a heart as deep as history,"
         line2="her spirit wild and free,"
         size={0.21}
-        position={[-w / 2, -h, 0]}
+        position={[-w / 2.01, -h, 0]}
       />
       <Text
         line1="She loves @honeymoon’s verses,"
@@ -260,8 +260,8 @@ function Items() {
         position={[-w / 2.09, -h * 5.2, 0]}
       />
       <Text2
-        line1="Maria Cecilia Carolina Madrida Croquetta"
-        line2="Perez De Acha Lopez,"
+        line1="Maria Cecilia Carolina Madrida "
+        line2="Croquetta Perez De Acha Lopez,"
         line3="you light up every space."
         size={0.17}
         position={[-w / 2.1, -h * 5.3, 0]}
@@ -327,7 +327,7 @@ export const Home = () => {
           <h1
             style={{
               position: "absolute",
-              top: "583vh",
+              top: "586vh",
               right: "5vw",
               fontSize: "5em",
             }}
