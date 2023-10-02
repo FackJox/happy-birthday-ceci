@@ -29,9 +29,9 @@ body,
 body {
   overscroll-behavior: none;
   color: #C96480;
-  font-family: 'coolvetica', sans-serif;
+  font-family: 'coolvetica';
   font-feature-settings: 'cv06' 1;
-  font-display: fallback;
+  font-display: block;
   background: #fff8ed;
 
 }
