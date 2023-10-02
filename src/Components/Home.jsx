@@ -281,7 +281,7 @@ export const Home = () => {
       dpr={[1, 1.5]}
     >
       <color attach="background" args={["#fff8ed"]} />
-      <ScrollControls damping={3} pages={8}>
+      <ScrollControls damping={2.5} pages={8}>
         <Items />
         <Scroll html style={{ width: "100%" }}>
           <h1
@@ -327,7 +327,7 @@ export const Home = () => {
        
           
 
-          <div className="absolute top-[600vh] md:top-[597vh] w-full h-screen flex items-center justify-center ">
+          <div className="absolute top-[585vh] w-screen h-screen flex items-center justify-center align-center">
             <video
               src={video}
               ref={videoElement}
@@ -336,7 +336,7 @@ export const Home = () => {
               loop
               muted
               playsInline
-              className="flex object-cover pl-2 pr-2 ml-2 mr-2 md:p-5 md:m-5 w-full h-3/4  items-center justify-center"
+              className="flex object-cover p-2 m-2 md:p-5 md:m-5 w-full h-3/4  items-center justify-center"
               onClick={() => {
                 if (videoElement.current) {
                   videoElement.current.requestFullscreen();
@@ -344,7 +344,7 @@ export const Home = () => {
               }}
             />
             </div>
-          <div className="absolute top-[700vh] w-screen h-screen flex-col items-center justify-center ">
+          <div className="absolute top-[673vh] w-screen h-screen flex-col items-center justify-center ">
           <div className=" p-2 m-2 md:p-5 md:m-5 w-auto h-3/4 md:h-screen flex items-center justify-center">
 
             <iframe src="https://my.atlist.com/map/2535defd-50df-4387-b379-06d89c4a1d14?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%" frameborder="1" scrolling="no" allowFullScreen></iframe>
