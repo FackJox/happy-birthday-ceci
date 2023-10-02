@@ -258,7 +258,7 @@ function Items() {
         line2="Croquetta Perez De Acha Lopez,"
         line3="you light up every space."
         size={0.17}
-        position={[-w / 2.1, -h * 5.3, 0]}
+        position={[-w / 2.2, -h * 5.3, 0]}
       />
     </Scroll>
   );
