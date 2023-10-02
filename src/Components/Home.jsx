@@ -21,6 +21,8 @@ import pause from "../assets/react.svg";
 import useVideoPlayer from "./VideoPlayer.jsx";
 
 const material = new THREE.MeshBasicMaterial({ color: 0x444545 });
+const material2 = new THREE.MeshBasicMaterial({ color: 0xF75C03 });
+
 
 function Text({ size, line1, line2, line3, line4, line5, ...props }) {
   const visible = useRef(false);
@@ -52,6 +54,46 @@ function Text({ size, line1, line2, line3, line4, line5, ...props }) {
           {line4}
           {" \n"}
           {line5}
+        </Text3D>
+      </Float>
+    </group>
+  );
+}
+
+function Text2({ size, line1, line2, line3, line4, line5, ...props }) {
+  const visible = useRef(false);
+  const ref = useIntersect((isVisible) => (visible.current = isVisible));
+  const { height } = useThree((state) => state.viewport);
+  useFrame((state, delta) => {
+    ref.current.position.y = THREE.MathUtils.damp(
+      ref.current.position.y,
+      visible.current ? 0 : -height / 1 + 1,
+      4,
+      delta
+    );
+  });
+
+  return (
+    <group {...props}>
+      <Float ref={ref} speed={1}>
+        <Text3D
+          font="./fonts/wonder-season.json"
+          size={size}
+          material={material2}
+        >
+          {line1}
+          {" \n"}
+          {line2}
+        
+        </Text3D>
+        <Text3D
+          font="./fonts/wonder-season.json"
+          size={size}
+          material={material}
+        >
+     
+          {line3}
+        
         </Text3D>
       </Float>
     </group>
@@ -294,7 +336,7 @@ export const Home = () => {
               loop
               muted
               playsInline
-              className="flex object-cover pl-2 pr-2 ml-2 mr-2 md:p-5 md:m-5 w-full h-3/4   items-center justify-center"
+              className="flex object-cover pl-2 pr-2 ml-2 mr-2 md:p-5 md:m-5 w-full h-3/4  items-center justify-center"
               onClick={() => {
                 if (videoElement.current) {
                   videoElement.current.requestFullscreen();
