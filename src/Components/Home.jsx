@@ -336,8 +336,9 @@ export const Home = () => {
           </h1>
        
           
-
           <div className="absolute top-[585vh] w-screen h-screen flex items-center justify-center align-center">
+            
+          <div className="absolute top-[585vh] w-full h-screen flex items-center justify-center align-center">
             <video
               src={video}
               ref={videoElement}
@@ -352,14 +353,15 @@ export const Home = () => {
                   videoElement.current.requestFullscreen();
                 }
               }}
-            />
+              />
             </div>
           <div className="absolute top-[673vh] w-screen h-screen flex-col items-center justify-center ">
-          <div className=" p-2 m-2 md:p-5 md:m-5 w-auto h-3/4 md:h-screen flex items-center justify-center">
+          <div className=" p-2 m-2 md:p-5 md:m-5 w-full h-3/4 md:h-screen flex items-center justify-center">
 
             <iframe src="https://my.atlist.com/map/2535defd-50df-4387-b379-06d89c4a1d14?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%" frameBorder="1" scrolling="no" allowFullScreen></iframe>
             </div>
             </div>
+              </div>
           
         </Scroll>
       </ScrollControls>
