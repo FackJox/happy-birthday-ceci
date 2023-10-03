@@ -45,6 +45,15 @@ h1 {
   padding: 0;
 }
 
+h2 {
+  font-size: 12vw;
+  font-weight: 400;
+  letter-spacing: 0.0em;
+  line-height: 0.5em;
+  margin: 0;
+  padding: 0;
+}
+
 
 a {
   pointer-events: all;

@@ -297,7 +297,7 @@ export const Home = () => {
           <h1
             style={{
               position: "absolute",
-              top: "217vh",
+              top: "210vh",
               right: "10vw",
               fontSize: "20vw",
             }}
@@ -307,13 +307,13 @@ export const Home = () => {
           <h1 style={{ position: "absolute", top: "380vh", left: "10vw" }}>
             you
           </h1>
-          <h1 style={{ position: "absolute", top: "490vh", right: "15vw" }}>
+          <h1 style={{ position: "absolute", top: "475vh", right: "15vw" }}>
             my love,
           </h1>
           <h1
             style={{
               position: "absolute",
-              top: "586vh",
+              top: "570vh",
               right: "5vw",
               fontSize: "5em",
             }}
@@ -322,9 +322,9 @@ export const Home = () => {
           </h1>
        
           
-          <div className="absolute top-[585vh] w-screen flex-col items-center justify-center align-center p-2 md:p-5">
+          <div className="absolute top-[600vh] w-screen flex-col items-center justify-center align-center p-2 md:p-5">
 
-          <div className="relative flex h-screen justify-center items-center align-center">
+          <div className="relative flex h-auto justify-center items-center align-center p-4">
             <video
               src={video}
               ref={videoElement}
@@ -341,13 +341,21 @@ export const Home = () => {
               }}
             />
             </div>
-          <div className="relative h-screen flex mt-[-95px] ">
+
+
+          <div className="relative h-screen flex p-4 ">
           <div className=" w-full h-3/4 md:h-screen flex ">
 
             <iframe src="https://my.atlist.com/map/2535defd-50df-4387-b379-06d89c4a1d14?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%"  allowFullScreen></iframe>
             </div>
             </div>
+
+
           </div>
+
+          <div className="absolute top-[760vh] w-screen flex-col items-center justify-end text-end mr-64 align-bottom font-sm p-2 md:p-5"><h2>xoxo</h2></div>
+
+
         </Scroll>
       </ScrollControls>
     </Canvas>
