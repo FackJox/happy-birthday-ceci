@@ -283,7 +283,7 @@ export const Home = () => {
           <h1
             style={{
               position: "absolute",
-              top: `40vh`,
+              top: `35vh`,
               right: "20vw",
               fontSize: "5em",
               transform: `translate3d(0,-100%,0)`,
@@ -307,7 +307,7 @@ export const Home = () => {
           <h1 style={{ position: "absolute", top: "360vh", left: "10vw" }}>
             you
           </h1>
-          <h1 style={{ position: "absolute", top: "470vh", right: "15vw" }}>
+          <h1 style={{ position: "absolute", top: "465vh", right: "15vw" }}>
             my love,
           </h1>
           <h1
