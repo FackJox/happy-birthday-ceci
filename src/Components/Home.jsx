@@ -322,7 +322,7 @@ export const Home = () => {
           </h1>
        
           
-          <div className="absolute top-[600vh] w-screen flex-col items-center justify-center align-center p-2 md:p-5">
+          <div className="absolute top-[590vh] w-screen flex-col items-center justify-center align-center p-2 md:p-5">
 
           <div className="relative flex h-auto justify-center items-center align-center p-4">
             <video
