@@ -346,7 +346,7 @@ export const Home = () => {
           <div className="relative h-screen flex p-4 ">
           <div className=" w-full h-3/4 md:h-screen flex ">
 
-            <iframe src="https://my.atlist.com/map/2535defd-50df-4387-b379-06d89c4a1d14?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%"  allowFullScreen></iframe>
+            <iframe src="https://my.atlist.com/map/89199769-0aa0-478f-a239-c49f4683f1e5?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="100%"  allowFullScreen></iframe>
             </div>
             </div>
 
